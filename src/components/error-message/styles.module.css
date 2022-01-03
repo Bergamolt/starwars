@@ -1,0 +1,8 @@
+.Message {
+
+}
+
+.Message__text {
+  color: var(--color-yellow);
+  font-size: var(--font-size-header);
+}

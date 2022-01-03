@@ -2,8 +2,15 @@
   --color-dark-gray: #10100e;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-yellow: #ff0;
 
   --spacing-medium: 20px;
+
+  --transition: .4s;
+
+  --font-size-header: 26px;
+
+  --theme-default-bgimage: url("static/bg.jpg");
 }
 
 body {
@@ -11,4 +18,15 @@ body {
   padding: 0;
   background-color: var(--color-dark-gray);
   font-family: sans-serif;
+  background-image: var(--theme-default-bgimage);
+}
+
+img {
+  display: block;
+}
+
+.Header__text {
+  line-height: 1.7;
+  font-size: var(--font-size-header);
+  transition: color var(--transition);
 }
