@@ -1,18 +1,20 @@
 import { NavLink, Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
 import { routesConfig } from 'routes/routesConfig'
+import { Header } from 'components/header'
 
 const App = () => (
   <Router>
-    <NavLink to="/" exect>Home</NavLink>
-    <NavLink to="/people" exect>People</NavLink>
-    <Routes>
-      {
-        routesConfig.map((route, index) => (
-          <Route key={ index } path={ route.path } element={ route.element } exect={ route.exect }/>
-        ))
-      }
-    </Routes>
+    <div className="App">
+      <Header/>
+      <Routes>
+        {
+          routesConfig.map((route, index) => (
+            <Route key={ index } path={ route.path } element={ route.element } exect={ route.exect }/>
+          ))
+        }
+      </Routes>
+    </div>
   </Router>
 )
 

@@ -1,0 +1,10 @@
+.Navigation {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  margin: 10px 0;
+}
+
+.Navigation a {
+  margin: 0;
+}

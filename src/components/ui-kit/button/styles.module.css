@@ -1,0 +1,39 @@
+.Button {
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-main);
+  font-weight: var(--font-bold);
+  background: none;
+  outline: none;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.Button:disabled,
+.Button:disabled:hover {
+  color: var(--color-gray);
+  border-color: var(--color-gray);
+  background-color: transparent;
+}
+
+.dark {
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+}
+
+.dark:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.white {
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.white:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}

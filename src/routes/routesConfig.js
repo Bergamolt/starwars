@@ -1,5 +1,6 @@
 import People from 'pages/people'
 import { Home } from 'pages/home'
+import { NotFound } from 'pages/not-found'
 
 export const routesConfig = [
   {
@@ -11,5 +12,10 @@ export const routesConfig = [
     path: '/people',
     exect: true,
     element: <People/>
+  },
+  {
+    path: '*',
+    exect: false,
+    element: <NotFound/>
   }
 ]

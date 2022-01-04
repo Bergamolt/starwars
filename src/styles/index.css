@@ -3,11 +3,21 @@
   --color-white: #ffffff;
   --color-black: #000000;
   --color-yellow: #ff0;
+  --color-violet: #ae72c2;
+
+  --max-width: 1200px;
+
+  --border-radius-small: 3px;
+
+  --font-bold: 600;
 
   --spacing-medium: 20px;
+  --spacing-large: 30px;
+  --spacing-big: 100px;
 
   --transition: .4s;
 
+  --font-size-main: 16px;
   --font-size-header: 26px;
 
   --theme-default-bgimage: url("static/bg.jpg");
@@ -16,6 +26,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: var(--font-size-main);
   background-color: var(--color-dark-gray);
   font-family: sans-serif;
   background-image: var(--theme-default-bgimage);
@@ -25,8 +36,14 @@ img {
   display: block;
 }
 
-.Header__text {
+.App {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.Title {
   line-height: 1.7;
   font-size: var(--font-size-header);
   transition: color var(--transition);
+  color: #cccc46;
 }
