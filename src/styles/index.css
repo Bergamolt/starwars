@@ -4,20 +4,27 @@
   --color-black: #000000;
   --color-yellow: #ff0;
   --color-violet: #ae72c2;
+  --color-red: #f75d83;
 
   --max-width: 1200px;
 
   --border-radius-small: 3px;
+  --border-radius-medium: 5px;
 
   --font-bold: 600;
 
+  --spacing-ultrasmall: 5px;
+  --spacing-small: 10px;
   --spacing-medium: 20px;
   --spacing-large: 30px;
   --spacing-big: 100px;
 
+  --margin-list: 7px;
+
   --transition: .4s;
 
   --font-size-main: 16px;
+  --font-size-subheader: 18px;
   --font-size-header: 26px;
 
   --theme-default-bgimage: url("static/bg.jpg");
@@ -30,6 +37,7 @@ body {
   background-color: var(--color-dark-gray);
   font-family: sans-serif;
   background-image: var(--theme-default-bgimage);
+  background-repeat: no-repeat;
 }
 
 img {

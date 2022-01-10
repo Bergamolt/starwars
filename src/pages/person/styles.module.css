@@ -1,0 +1,20 @@
+.PersonPage__wrapper {
+  margin-top: 45px;
+}
+
+.PersonPage__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--spacing-medium);
+  border-left: 5px solid var(--color-violet);
+}
+
+.PersonPage__title {
+  display: inline-block;
+  font-size: var(--font-size-subheader);
+  font-weight: var(--font-bold);
+  padding: var(--spacing-small);
+  background-color: var(--color-violet);
+  color: var(--color-white);
+  border-radius: var(--border-radius-medium) var(--border-radius-medium) var(--border-radius-medium) 0;
+}

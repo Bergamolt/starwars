@@ -1,0 +1,30 @@
+.PersonFilms {
+  width: 300px;
+  padding: var(--spacing-medium) 0;
+  margin-left: var(--spacing-large);
+  color: var(--color-white);
+}
+
+.PersonFilms__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.PersonFilms__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--margin-list);
+}
+
+.PersonFilms__episode {
+  background-color: var(--color-red);
+  padding: var(--spacing-ultrasmall);
+  border-radius: var(--border-radius-small);
+}
+
+.PersonFilms__colon {
+  width: 20px;
+  font-weight: var(--font-bold);
+  text-align: center;
+}

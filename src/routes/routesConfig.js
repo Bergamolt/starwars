@@ -1,21 +1,27 @@
 import People from 'pages/people'
+import Person from 'pages/person'
 import { Home } from 'pages/home'
 import { NotFound } from 'pages/not-found'
 
 export const routesConfig = [
   {
     path: '/',
-    exect: true,
+    exact: true,
     element: <Home/>
   },
   {
     path: '/people',
-    exect: true,
+    exact: false,
     element: <People/>
   },
   {
+    path: '/people/:id',
+    exact: false,
+    element: <Person/>
+  },
+  {
     path: '*',
-    exect: false,
+    exact: false,
     element: <NotFound/>
   }
 ]

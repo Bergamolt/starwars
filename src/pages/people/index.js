@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 import { useCallback, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
-import { useQueryParams } from 'components/hooks/useQueryParams'
+import { useQueryParams } from 'hooks/useQueryParams'
 import { WithErrorApi } from 'hoc-helpers/with-error-api'
 import { getApiResource } from 'utils/network'
 import { PEOPLE_API } from 'constants/api'
@@ -44,7 +44,7 @@ const People = ({ setError }) => {
   }, [ people, setError ])
 
   useEffect(() => {
-    getResource(PEOPLE_API + queryPage)
+    (async () => await getResource(1+PEOPLE_API + queryPage))()
   }, [])
 
   return (

@@ -1,8 +1,9 @@
 .Message {
-
-}
-
-.Message__text {
+  width: 600px;
+  margin: 100px auto auto;
   color: var(--color-yellow);
+  line-height: 1.7;
   font-size: var(--font-size-header);
+  text-align: center;
+  text-shadow: 0 0 2px var(--color-white);
 }
