@@ -1,16 +1,13 @@
 .People {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  row-gap: var(--spacing-medium);
-  column-gap: var(--spacing-medium);
-  margin-top: var(--spacing-medium);
 }
 
 .PeopleItem {
   overflow: hidden;
   border-radius: 5px;
   width: 190px;
+  margin: var(--spacing-medium);
   background-color: var(--color-white);
 }
 

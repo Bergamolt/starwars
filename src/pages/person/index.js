@@ -52,7 +52,7 @@ const Person = ({ setError }) => {
       <div className={ styles.PersonPage__wrapper }>
         <span className={ styles.PersonPage__title }>{ personName }</span>
         <div className={ styles.PersonPage__container }>
-          <PersonPhoto personPhoto={ personPhoto } personName={ personName }/>
+          <PersonPhoto personId={id} personPhoto={ personPhoto } personName={ personName }/>
           <PersonInfo personInfo={ personInfo }/>
           <PersonFilms personFilms={ personFilms }/>
         </div>

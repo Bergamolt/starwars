@@ -41,10 +41,10 @@ const People = ({ setError }) => {
     } else {
       setError(true)
     }
-  }, [ people, setError ])
+  }, [ setError ])
 
   useEffect(() => {
-    (async () => await getResource(1+PEOPLE_API + queryPage))()
+    (async () => await getResource(PEOPLE_API + queryPage))()
   }, [])
 
   return (

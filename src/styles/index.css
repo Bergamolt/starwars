@@ -46,7 +46,7 @@ img {
 
 .App {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .Title {
