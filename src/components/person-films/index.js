@@ -2,6 +2,7 @@ import styles from './styles.module.css'
 
 import { useMemo } from 'react'
 import PropTypes from 'prop-types'
+import { Loader } from '../ui-kit/loader'
 
 export const PersonFilms = ({ personFilms }) => {
   const films = useMemo(() => {
@@ -22,9 +23,13 @@ export const PersonFilms = ({ personFilms }) => {
 
   return (
     <div className={ styles.PersonFilms }>
-      <ul className={ styles.PersonFilms__list }>
-        { films }
-      </ul>
+      {
+        !personFilms ?
+          <Loader/> :
+          <ul className={ styles.PersonFilms__list }>
+            { films }
+          </ul>
+      }
     </div>
   )
 }

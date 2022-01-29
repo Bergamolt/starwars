@@ -2,7 +2,7 @@ import styles from './styles.module.css'
 
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import Button from '../ui-kit/button'
+import { Button } from '../ui-kit/button'
 
 export const Navigation = ({ counterPage, prevPage, nextPage, getResource }) => {
   const handlerPrevClick = () => getResource(prevPage)

@@ -6,10 +6,19 @@
   --color-violet: #ae72c2;
   --color-red: #f75d83;
 
+  --color-light: #29e52d;
+  --color-dark: #d82228;
+  --color-neutral: #ff0;
+
+  --color-shadow-light: rgba(41,229,45,0.4);
+  --color-shadow-dark: rgba(216,34,40,0.4);
+  --color-shadow-neitral: rgba(224,224,81,0.4);
+
   --max-width: 1200px;
 
   --border-radius-small: 3px;
   --border-radius-medium: 5px;
+  --border-radius-large: 10px;
 
   --font-bold: 600;
 
@@ -27,17 +36,32 @@
   --font-size-subheader: 18px;
   --font-size-header: 26px;
 
-  --theme-default-bgimage: url("static/bg.jpg");
+  /*THEME*/
+  --theme-neutral-title: #cccc46;
+  --theme-dark-title: #ca6c6f;
+  --theme-light-title: #dfe2df;
+
+  --theme-neutral-bgimage: url("static/bg.jpg");
+  --theme-dark-bgimage: linear-gradient(to right bottom, #000, #160b11, #20141e, #281b2e, #2b2440);
+  --theme-light-bgimage: linear-gradient(to right bottom, #051937, #162454, #312d70, #533389, #7a359f);
+
+  --theme-default-title: var(--theme-neutral-title);
+  --theme-default-bgimage: var(--theme-neutral-bgimage)
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-size: var(--font-size-main);
   background-color: var(--color-dark-gray);
   font-family: sans-serif;
   background-image: var(--theme-default-bgimage);
+  transition: background .3s;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: fixed;
 }
 
 img {
@@ -46,12 +70,19 @@ img {
 
 .App {
   max-width: var(--max-width);
-  margin: 30px auto;
+  margin: auto;
+  padding: var(--spacing-large) 0;
 }
 
 .Title {
   line-height: 1.7;
   font-size: var(--font-size-header);
   transition: color var(--transition);
-  color: #cccc46;
+  color: var(--theme-default-title);
+}
+
+@media screen and (max-width: 1400px) {
+  .App {
+    padding: var(--spacing-large);
+  }
 }

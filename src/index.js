@@ -8,12 +8,15 @@ import { PersistGate } from 'redux-persist/integration/react'
 import { store, persistor } from 'store'
 
 import App from './app'
+import { ThemeProvider } from './context/ThemeContext'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={ store }>
       <PersistGate persistor={ persistor }>
-        <App/>
+        <ThemeProvider>
+          <App/>
+        </ThemeProvider>
       </PersistGate>
     </Provider>
   </React.StrictMode>,

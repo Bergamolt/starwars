@@ -1,9 +1,8 @@
-import React from 'react'
+import { ChooseSide } from 'components/choose-side'
 
-export const Home = () => {
-  return (
-    <div>
-      <h1 className="Title">Choose your side</h1>
-    </div>
-  )
-}
+export const Home = () => (
+  <div>
+    <h1 className="Title">Choose your side</h1>
+    <ChooseSide/>
+  </div>
+)

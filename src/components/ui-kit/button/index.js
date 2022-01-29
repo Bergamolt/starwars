@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 import PropTypes from 'prop-types'
 
-const Button = ({ text, onClick, disabled, className, theme = 'white' }) => {
+export const Button = ({ text, onClick, disabled, className, theme = 'white' }) => {
   return (
     <button
       onClick={ onClick }
@@ -23,5 +23,3 @@ Button.propTypes = {
   theme: PropTypes.string,
   text: PropTypes.string,
 }
-
-export default Button

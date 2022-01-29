@@ -2,7 +2,8 @@ import People from 'pages/people'
 import Person from 'pages/person'
 import { Home } from 'pages/home'
 import { NotFound } from 'pages/not-found'
-import { Favorite } from '../pages/favorite'
+import { Favorite } from 'pages/favorite'
+import { Search } from 'pages/search'
 
 export const routesConfig = [
   {
@@ -23,6 +24,11 @@ export const routesConfig = [
     path: '/favorite',
     exact: true,
     element: <Favorite/>
+  },
+  {
+    path: '/search',
+    exact: true,
+    element: <Search/>
   },
   {
     path: '*',

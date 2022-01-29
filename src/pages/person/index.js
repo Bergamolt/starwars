@@ -22,11 +22,13 @@ const Person = ({ setError }) => {
 
   const { id } = useParams()
 
+  let cleanFunc = false
+
   useEffect(() => {
-    (async () => {
+    const fetchData = async () => {
       const res = await getApiResource(PERSON_API + id)
 
-      if (res) {
+      if (res && !cleanFunc) {
         setPersonInfo([
           { title: 'Height', value: res.height },
           { title: 'Hair Color', value: res.hair_color },
@@ -43,7 +45,11 @@ const Person = ({ setError }) => {
       }
 
       setError(!res)
-    })()
+    }
+
+    fetchData()
+
+    return () => cleanFunc = true
   }, [ setError, id ])
 
   return (
@@ -52,7 +58,7 @@ const Person = ({ setError }) => {
       <div className={ styles.PersonPage__wrapper }>
         <span className={ styles.PersonPage__title }>{ personName }</span>
         <div className={ styles.PersonPage__container }>
-          <PersonPhoto personId={id} personPhoto={ personPhoto } personName={ personName }/>
+          <PersonPhoto personId={ id } personPhoto={ personPhoto } personName={ personName }/>
           <PersonInfo personInfo={ personInfo }/>
           <PersonFilms personFilms={ personFilms }/>
         </div>
