@@ -4,7 +4,7 @@ import { routesConfig } from 'routes/routesConfig'
 import { Header } from 'components/header'
 
 const App = () => {
-  return (<Router>
+  return (<Router base={'/starwars/'}>
       <div className="App">
         <Header/>
         <Routes>
