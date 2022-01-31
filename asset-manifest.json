@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/starwars/static/css/main.8393f3d6.css",
+    "main.js": "/starwars/static/js/main.6f54df34.js",
+    "static/media/bg.jpg": "/starwars/static/media/bg.29b25be31315dad3ce4e.jpg",
+    "static/media/falcon.jpg": "/starwars/static/media/falcon.c1d0a8d1869b3fbdb9ab.jpg",
+    "static/media/dark-side.jpg": "/starwars/static/media/dark-side.e0f8cab78e4bdd7db45d.jpg",
+    "static/media/light-side.jpg": "/starwars/static/media/light-side.eebc52171cd4ac0278ca.jpg",
+    "static/media/not-found.png": "/starwars/static/media/not-found.1062f5e41ef989b5973a.png",
+    "static/media/lightsaber.svg": "/starwars/static/media/lightsaber.eb7d4cd665426117002814db79fceef4.svg",
+    "static/media/space-station.svg": "/starwars/static/media/space-station.7a027c6ec10ba7b5d8c880df5f4e65ea.svg",
+    "static/media/droid.svg": "/starwars/static/media/droid.de165dd887badb2bdbe9d97b8e527c6f.svg",
+    "static/media/loading.svg": "/starwars/static/media/loading.0f78642df6284cab0c20ab6f270ae6c8.svg",
+    "static/media/favorite.svg": "/starwars/static/media/favorite.b582cbe4888437f92dbaca32d77538c7.svg",
+    "static/media/cancel.svg": "/starwars/static/media/cancel.1d37b349388167de6bd090b5731bf27e.svg",
+    "static/media/bookmark.svg": "/starwars/static/media/bookmark.31e3181119b11037b93dc7700e81274f.svg",
+    "index.html": "/starwars/index.html",
+    "static/media/back.svg": "/starwars/static/media/back.1640ee54a71d12449eec15d68bbfc14e.svg",
+    "main.8393f3d6.css.map": "/starwars/static/css/main.8393f3d6.css.map",
+    "main.6f54df34.js.map": "/starwars/static/js/main.6f54df34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8393f3d6.css",
+    "static/js/main.6f54df34.js"
+  ]
+}
