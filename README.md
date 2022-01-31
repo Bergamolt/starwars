@@ -1,3 +1,5 @@
+[GH PAGES](https://bergamolt.github.io/starwars/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
