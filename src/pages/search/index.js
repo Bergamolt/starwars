@@ -8,6 +8,8 @@ import { getPeopleId, getPeopleImg } from 'services/getPeopleData'
 import { SearchList } from 'components/search-list'
 import { TextField } from 'components/ui-kit/text-field'
 
+const DELAY_DEBOUNCE = 500
+
 export const Search = () => {
   const [ people, setPeople ] = useState(null)
   const [ value, setValue ] = useState('')
@@ -16,7 +18,7 @@ export const Search = () => {
     setValue(value)
   }
 
-  const debouncedValue = useDebounce(value, 2000)
+  const debouncedValue = useDebounce(value, DELAY_DEBOUNCE)
 
   useEffect(() => {
     if (debouncedValue) {
