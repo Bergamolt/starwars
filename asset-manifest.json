@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/starwars/static/css/main.8393f3d6.css",
-    "main.js": "/starwars/static/js/main.42aaec11.js",
+    "main.css": "/starwars/static/css/main.a1a16288.css",
+    "main.js": "/starwars/static/js/main.a901dd78.js",
     "static/media/bg.jpg": "/starwars/static/media/bg.29b25be31315dad3ce4e.jpg",
     "static/media/falcon.jpg": "/starwars/static/media/falcon.c1d0a8d1869b3fbdb9ab.jpg",
     "static/media/dark-side.jpg": "/starwars/static/media/dark-side.e0f8cab78e4bdd7db45d.jpg",
@@ -16,11 +16,11 @@
     "static/media/bookmark.svg": "/starwars/static/media/bookmark.31e3181119b11037b93dc7700e81274f.svg",
     "index.html": "/starwars/index.html",
     "static/media/back.svg": "/starwars/static/media/back.1640ee54a71d12449eec15d68bbfc14e.svg",
-    "main.8393f3d6.css.map": "/starwars/static/css/main.8393f3d6.css.map",
-    "main.42aaec11.js.map": "/starwars/static/js/main.42aaec11.js.map"
+    "main.a1a16288.css.map": "/starwars/static/css/main.a1a16288.css.map",
+    "main.a901dd78.js.map": "/starwars/static/js/main.a901dd78.js.map"
   },
   "entrypoints": [
-    "static/css/main.8393f3d6.css",
-    "static/js/main.42aaec11.js"
+    "static/css/main.a1a16288.css",
+    "static/js/main.a901dd78.js"
   ]
 }
