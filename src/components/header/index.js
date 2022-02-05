@@ -11,19 +11,19 @@ import { useTheme } from '../../context/ThemeContext'
 const logo = { dark, neutral, light }
 
 export const Header = () => {
-  const { theme } = useTheme()
+	const { theme } = useTheme()
 
-  return (
-    <div className={ styles.Header }>
-      <NavLink to="/">
-        <img src={ logo[theme] } alt="" className={ styles.Logo }/>
-      </NavLink>
-      <ul className={ styles.Header__list }>
-        <li><NavLink to="/" exact={ `${ true }` }>Home</NavLink></li>
-        <li><NavLink to="/people/?page=1">People</NavLink></li>
-        <li><NavLink to="/search">Search</NavLink></li>
-      </ul>
-      <Favorite/>
-    </div>
-  )
+	return (
+		<div className={ styles.Header }>
+			<NavLink to="/">
+				<img src={ logo[theme] } alt="" className={ styles.Logo }/>
+			</NavLink>
+			<ul className={ styles.Header__list }>
+				<li><NavLink to="/" exact={ `${ true }` }>Home</NavLink></li>
+				<li><NavLink to="/people/?page=1">People</NavLink></li>
+				<li><NavLink to="/search">Search</NavLink></li>
+			</ul>
+			<Favorite/>
+		</div>
+	)
 }

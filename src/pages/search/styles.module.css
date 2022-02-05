@@ -1,0 +1,11 @@
+.Search {
+  display: flex;
+  flex-direction: column;
+}
+
+.Search__noData {
+  margin-top: var(--spacing-medium);
+  color: var(--color-white);
+  font-size: var(--font-size-main);
+  font-weight: var(--font-bold);
+}

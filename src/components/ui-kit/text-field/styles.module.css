@@ -7,9 +7,11 @@
 .TextField {
   position: relative;
   display: inline-flex;
+  max-width: 300px;
 }
 
 .TextField__input {
+  width: 100%;
   padding: 10px 15px;
   padding-right: calc(var(--spacing-medium) + 15px);
   border: var(--border) solid;

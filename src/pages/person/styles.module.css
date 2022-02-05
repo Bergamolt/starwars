@@ -5,7 +5,7 @@
 .PersonPage__container {
   display: flex;
   flex-wrap: wrap;
-  padding: var(--spacing-medium);
+  padding: 20px;
   border-left: 5px solid var(--color-violet);
 }
 
